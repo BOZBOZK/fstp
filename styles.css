@@ -1,65 +1,79 @@
 body{
+    font-family: 'lato',sans-serif;
+}
+.item1 { grid-area: header; }
+.item2 { grid-area: b1l; }
+.item3 { grid-area: b1r; }
+.item4 { grid-area: b2; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'bil b1l b1l b1r b1r b1r'
+    'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.fst{
     background-color: lightcyan;
 }
-h1{position: absolute;
-    top: -2px;
-    left: 110px;
-    font-family: 'lato',sans-serif;
+.au{
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+}
+.navbar{
+    justify-content: center;
+    word-spacing: 60px;
+}
+.goin{
+    left: 90%;
+    align-items: baseline;
+}
+.name{
     color: limegreen;
     font-size: 60px;
 }
-h2{position: absolute;
-    font-size: x-large;
-    top: 10px;
-    left: 900px;
-    font-family: 'lato',sans-serif;
-    color: black;}
-h3{position: absolute;
-    font-size: x-large;
-    top: 8px;
-    left: 998px;
-   word-spacing: 30px;
-    font-family: 'lato',sans-serif;
-   color: grey;}
-h4{position: absolute;
-    font-size: x-large;
-    top: 6px;
-    left: 1620px;
-    font-family: 'lato',sans-serif;
-    color: grey;
-}
-
-.square {position: absolute;
-    top: 30px;
-    left: 1720px;
+.square {
     width: 100px;
     height: 50px;
-    font-family: 'lato',sans-serif;
     color: white;
     background-color: limegreen;
     border-radius: 15px;
-    color: white;
     font-size: 30px;
 }
-
-p{
+.lwow{
+    display: flex;
+    width: 50%;
+    color: black;
+}
+.we{
+    display: flex;
+    font-size: 60px;
+    justify-content: flex-start;
+}
+.we{
     position: absolute;
     top:130px;
     left: 200px;
     font-size: 95px;
-    font-family: 'lato',sans-serif;
 }
-p1{position: absolute;
-    top:680px;
-    left: 200px;
+
+.mak{
     font-size: 30px;
-    font-family: 'lato',sans-serif;
 }
-p2{position: absolute;
-    top: 855px;
-    left: 590px;
+.vd{
     font-size: 30px;
-    font-family: 'lato',sans-serif;
 }
 img {
     position: absolute;
@@ -84,7 +98,6 @@ img {
     border-bottom-right-radius: 35px;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
-    font-family: 'lato',sans-serif;
     color: white;
     font-size: 30px;
 }
@@ -116,9 +129,12 @@ p3{ position: relative;
     display: flex;
     justify-content: center;
     font-size: 60px;
-    font-family: 'lato',sans-serif;
 }
 div1{
     background-color: darkgray;
     display: inline-block;
+}
+.snd{
+    background-color: darkgray;
+    display: block;
 }
